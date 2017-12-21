@@ -17,4 +17,7 @@ from django.conf.urls import url, include
 from . import views as views
 urlpatterns = [
     url(r'^model$', views.model),
+    url(r'^sign-in$', views.signIn),
+    url(r'^sign-up$', views.signup),
+    url(r'^index$', views.index),
 ]
