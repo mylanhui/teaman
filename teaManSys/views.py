@@ -14,5 +14,17 @@ def signup(req):
     return render_to_response('login/sign-up.html')
 
 
-def index(req):
-    return render_to_response('page/index.html')
+def grade(req):
+    return render_to_response('page/grade.html')
+
+def teacher(req):
+    return render_to_response('page/teacher.html')
+
+def student(req):
+    return render_to_response('page/student.html')
+
+def classa(req):
+    return render_to_response('page/class.html')
+
+def courses(req):
+    return render_to_response('page/courses.html')

@@ -19,5 +19,10 @@ urlpatterns = [
     url(r'^model$', views.model),
     url(r'^sign-in$', views.signIn),
     url(r'^sign-up$', views.signup),
-    url(r'^index$', views.index),
+    url(r'^grade$', views.grade),
+    url(r'^teacher$', views.teacher),
+    url(r'^student$', views.student),
+    url(r'^class$', views.classa),
+    url(r'^courses$', views.courses),
+
 ]
