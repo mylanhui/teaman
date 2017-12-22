@@ -6,7 +6,7 @@
 		<!-- Basic -->
     	<meta charset="UTF-8" />
 
-		<title>教学管理系统</title>
+		<title>课程管理</title>
 
 		<!-- Mobile Metas -->
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -266,12 +266,51 @@
 								<li class="active"><i class="fa fa-laptop"></i>成绩管理</li>
 							</ol>
 						</div>
-						<div class="pull-right">
-							<h2>Dashboard</h2>
+						<div class="pull-right btn-group">
+							<!-- 按钮触发模态框 -->
+							<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+								添  加
+							</button>
 						</div>
 					</div>
 					<!-- End Page Header -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin:auto">
+						<div class="modal-dialog" role="document" style="margin: 170px auto;">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<h4 class="modal-title" id="myModalLabel">添加成绩</h4>
+								</div>
+								<div class="modal-body">
 
+									<div class="form-group">
+										<label for="txt_departmentname">课程名称</label>
+										<input type="text" name="txt_departmentname" class="form-control" id="txt_departmentname" placeholder="课程名称" style="width:80%">
+										<i style="color:#FF000A;font-size:18px;margin-left: 82%;float: left;margin-top: -5%;">*</i>
+									</div>
+									<div class="form-group">
+										<label for="txt_parentdepartment">课程号</label>
+										<input style="width:80%" type="text" name="txt_parentdepartment" class="form-control" id="txt_parentdepartment" placeholder="课程号">
+										<i style="color:#FF000A;font-size:18px;margin-left: 82%;float: left;margin-top: -5%;">*</i>
+									</div>
+									<div class="form-group">
+										<label for="txt_departmentlevel">教师工号</label>
+										<input style="width:80%" type="text" name="txt_departmentlevel" class="form-control" id="txt_departmentlevel" placeholder="教师工号">
+										<i style="color:#FF000A;font-size:18px;margin-left: 82%;float: left;margin-top: -5%;">*</i>
+									</div>
+									<div class="form-group">
+										<label for="txt_statu">开课学期</label>
+										<input style="width:80%" type="text" name="txt_statu" class="form-control" id="txt_statu" placeholder="开课学期">
+										<i style="color:#FF000A;font-size:18px;margin-left: 82%;float: left;margin-top: -5%;">*</i>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
+									<button type="button" id="btn_submit" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>保存</button>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<!-- End Main Page -->
 

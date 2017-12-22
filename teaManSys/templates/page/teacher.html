@@ -6,7 +6,7 @@
 		<!-- Basic -->
     	<meta charset="UTF-8" />
 
-		<title>教学管理系统</title>
+		<title>成绩管理</title>
 
 		<!-- Mobile Metas -->
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -17,17 +17,17 @@
 
 		<!-- Vendor CSS-->
 		<link href="../../static/page/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-{#		<link href="../../static/page/vendor/skycons/css/skycons.css" rel="stylesheet" />#}
+<!--{#		<link href="../../static/page/vendor/skycons/css/skycons.css" rel="stylesheet" />#}-->
 		<link href="../../static/page/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-{#		<link href="../../static/page/vendor/css/pace.preloader.css" rel="stylesheet" />#}
+<!--{#		<link href="../../static/page/vendor/css/pace.preloader.css" rel="stylesheet" />#}-->
 {#		#}
 		<!-- Plugins CSS-->
-{#		<link href="../../static/page/plugins/jquery-ui/css/jquery-ui-1.10.4.min.css" rel="stylesheet" />#}
-{#		<link href="../../static/page/plugins/scrollbar/css/mCustomScrollbar.css" rel="stylesheet" />#}
-{#		<link href="../../static/page/plugins/bootkit/css/bootkit.css" rel="stylesheet" />#}
-{#		<link href="../../static/page/plugins/magnific-popup/css/magnific-popup.css" rel="stylesheet" />#}
-{#		<link href="../../static/page/plugins/fullcalendar/css/fullcalendar.css" rel="stylesheet" />#}
-{#		<link href="../../static/page/plugins/jqvmap/jqvmap.css" rel="stylesheet" />#}
+<!--{#		<link href="../../static/page/plugins/jquery-ui/css/jquery-ui-1.10.4.min.css" rel="stylesheet" />#}-->
+<!--{#		<link href="../../static/page/plugins/scrollbar/css/mCustomScrollbar.css" rel="stylesheet" />#}-->
+<!--{#		<link href="../../static/page/plugins/bootkit/css/bootkit.css" rel="stylesheet" />#}-->
+<!--{#		<link href="../../static/page/plugins/magnific-popup/css/magnific-popup.css" rel="stylesheet" />#}-->
+<!--{#		<link href="../../static/page/plugins/fullcalendar/css/fullcalendar.css" rel="stylesheet" />#}-->
+<!--{#		<link href="../../static/page/plugins/jqvmap/jqvmap.css" rel="stylesheet" />#}-->
 
 		<!-- Theme CSS -->
 		<link href="../../static/page/css/jquery.mmenu.css" rel="stylesheet" />
@@ -146,19 +146,14 @@
 									</div>
 								</li>
 								<li>
-									<a href="page-profile.html"><i class="fa fa-user"></i> Profile</a>
+									<a href="#"><i class="fa fa-user"></i> 个人资料</a>
 								</li>
 								<li>
-									<a href="#"><i class="fa fa-wrench"></i> Settings</a>
+									<a href="#"><i class="fa fa-wrench"></i> 个人设置</a>
 								</li>
+
 								<li>
-									<a href="page-invoice"><i class="fa fa-usd"></i> Payments</a>
-								</li>
-								<li>
-									<a href="#"><i class="fa fa-file"></i> File</a>
-								</li>
-								<li>
-									<a href="page-login.html"><i class="fa fa-power-off"></i> Logout</a>
+									<a href="#"><i class="fa fa-power-off"></i> 注  销</a>
 								</li>
 							</ul>
 						</div>
@@ -266,8 +261,11 @@
 								<li class="active"><i class="fa fa-laptop"></i>成绩管理</li>
 							</ol>
 						</div>
-						<div class="pull-right">
-							<h2>Dashboard</h2>
+						<div class="pull-right btn-group">
+							<!-- 按钮触发模态框 -->
+							<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+								添  加
+							</button>
 						</div>
 					</div>
 					<!-- End Page Header -->
